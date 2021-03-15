@@ -23,7 +23,18 @@ class ViewController: UIViewController {
         view.addSubview(myView)
         
         // Display text onto the screen
-        let myLabel = UILabel()
+        let myLabel = UILabel (frame: CGRect(x: 200, y: 100, width: 200, height: 100))
+        myLabel.text = "Hello 🤯"
+        myLabel.textColor = UIColor.yellow
+        myLabel.textAlignment = .center
+        view.addSubview(myLabel)
+        
+        // Display an image on the screen
+        
+        let myImageView = UIImageView(frame: CGRect(x: 35, y: 300, width: 400, height: 400))
+        myImageView.image = UIImage(named: "photo1.jpg")
+        view.addSubview(myImageView)
+        
     }
 
 
